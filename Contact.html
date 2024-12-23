@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University web design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="Sub-header">
+        <nav>
+            <a href="University.html"><img src="images/primary_shield_RGB.png"></a>
+            <div class="nav-link" id="navlinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="University.html">HOME</a></li>
+                    <li><a href="About.html">ABOUT</a></li>
+                    <li><a href="Course.html">COURSE</a></li>
+                    <li><a href="Blog.html">BLOG</a></li>
+                    <li><a href="Contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars"onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+</section>
+
+<!------ contact us ------>
+
+<section class="location">
+
+    <iframe src="https://www.google.com/maps/d/embed?mid=1YGBu3BHd2Jjb5rpsvbOa22ySCRg&ehbc=2E312F" width="640" height="480"></iframe>
+
+</section>
+
+<section class="Contact-Us">
+
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <span>
+                    <h5>Worcester, Massachusetts, U.S.A</h5>
+                    <p>United states of America, English, USA</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+                    <h5>800-442-2421</h5>
+                    <p>Monday to Saturday, 10AM to 6PM</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                <span>
+                    <h5>info@holycrossUS.com</h5>
+                    <p>Email us your query</p>
+                </span>
+            </div>
+        </div>
+        <div class="contact-col">
+
+            <form action="form-handler.php" method="post">
+                <input type="text" name="Name" placeholder="Enter your name" required>
+                <input type="Email" name="Email" placeholder="Enter Email Address" required>
+                <input type="text" name="Subject" placeholder="Enter your Subject" required>
+                <textarea rows="8" name="Message" placeholder="Message" required></textarea>
+                <button type="Submit" class="hero-btn red-btn">Send Message</button>
+            </form>
+
+     
+
+        </div>
+    </div>
+
+</section>
+
+
+    
+
+
+
+
+<!------ Footer ------>
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>In search of imcediable we learn to survive and develope our technical skills<br>in a right way now re your seats to be succeed</p>
+    <div class="icons">
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
+    </div>
+    <p>Made with By <i class="fa fa-heart-o" aria-hidden="true"></i> Easy Html and Css</p>
+</section>
+
+    
+<!------ Javascript for toggle menu ------>
+<script>
+
+    var navlinks = document.getElementById("navlinks");
+    function showMenu(){
+        navlinks.style.right = "0";
+    }
+    function hideMenu(){
+        navlinks.style.right = "-200px"
+    }
+</script>
+
+</body>
+</html>
